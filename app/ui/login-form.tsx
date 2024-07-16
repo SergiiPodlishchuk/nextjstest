@@ -24,7 +24,7 @@ export default function LoginForm() {
   const formAction = async (d: FormData) => {
     setPending(true);
     const result = await authenticate('', d);
-    setErrorMessage(result);
+    setErrorMessage('result');
     setPending(false);
   };
 
